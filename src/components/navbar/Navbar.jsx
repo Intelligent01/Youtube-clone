@@ -10,11 +10,11 @@ import profile_icon from './../../assets/user_profile.jpg'
 
 
 
-export const Navbar = () => {
+export const Navbar = ({setSidebar}) => {
   return <>
     <nav className=" flex-div">
         <div className="nav-left flex-div">
-            <img src={menu_icon} className="menu-icon" alt=""  />
+            <img src={menu_icon} onClick={() => setSidebar(prev=>prev===false?true:false)} className="menu-icon" alt=""  />
             <img src={logo} className="logo" alt=""  />
         </div>
 

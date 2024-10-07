@@ -17,9 +17,9 @@ import megan from "../../assets/megan.png";
 import cameron from "../../assets/cameron.png";
 
 
-export const Sidebar = () => {
+export const Sidebar = ({sidebar}) => {
   return <>
-    <div className="sidebar">
+    <div className={`sidebar ${sidebar?"":"small"}`}>
         <div className="shortcuts-links">
             <div className="side-link">
                 <img src={home} alt="" /><p>Home</p>
