@@ -17,36 +17,36 @@ import megan from "../../assets/megan.png";
 import cameron from "../../assets/cameron.png";
 
 
-export const Sidebar = ({sidebar}) => {
+export const Sidebar = ({sidebar, category, setCategory}) => {
   return <>
     <div className={`sidebar ${sidebar?"":"small"}`}>
         <div className="shortcuts-links">
-            <div className="side-link">
-                <img src={home} alt="" /><p>Home</p>
+            <div className={`side-link ${category === 0 ? "active":""}`}>
+                <img src={home} alt="" onClick={() => setCategory(0)} /><p>Home</p>
             </div>
-            <div className="side-link">
-                <img src={game_icon} alt="" /><p>Game_icon</p>
+            <div className={`side-link ${category === 20 ? "active":""}`}>
+                <img src={game_icon} alt="" onClick={() => setCategory(20)} /><p>Game_icon</p>
             </div>
-            <div className="side-link">
-                <img src={automobiles} alt="" /><p>Automobiles</p>
+            <div className={`side-link ${category === 2 ? "active":""}`}>
+                <img src={automobiles} alt="" onClick={() => setCategory(2)} /><p>Automobiles</p>
             </div>
-            <div className="side-link">
-                <img src={sports} alt="" /><p>Sports</p>
+            <div className={`side-link ${category === 17 ? "active":""}`}>
+                <img src={sports} alt="" onClick={() => setCategory(17)} /><p>Sports</p>
             </div>
-            <div className="side-link">
-                <img src={entertainment} alt="" /><p>Entetainment</p>
+            <div className={`side-link ${category === 24 ? "active":""}`}>
+                <img src={entertainment} alt="" onClick={() => setCategory(24)} /><p>Entetainment</p>
             </div>
-            <div className="side-link">
-                <img src={tech} alt="" /><p>Tech</p>
+            <div className={`side-link ${category === 28 ? "active":""}`}>
+                <img src={tech} alt="" onClick={() => setCategory(28)} /><p>Tech</p>
             </div>
-            <div className="side-link">
-                <img src={music} alt="" /><p>Music</p>
+            <div className={`side-link ${category === 10 ? "active":""}`}>
+                <img src={music} alt="" onClick={() => setCategory(10)} /><p>Music</p>
             </div>
-            <div className="side-link">
-                <img src={blogs} alt="" /><p>Blogs</p>
+            <div className={`side-link ${category === 22 ? "active":""}`}>
+                <img src={blogs} alt="" onClick={() => setCategory(22)} /><p>Blogs</p>
             </div>
-            <div className="side-link">
-                <img src={news} alt="" /><p>News</p>
+            <div className={`side-link ${category === 25 ? "active":""}`}>
+                <img src={news} alt="" onClick={() => setCategory(25)} /><p>News</p>
             </div>
         <hr />
         </div>
