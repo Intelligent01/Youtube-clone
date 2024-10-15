@@ -16,7 +16,7 @@ const Recommended = ({categoryId}) => {
     const [apidata, setApidata] = useState([]);
 
     async function fetchData() {
-        const Video_Url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=20&regionCode=US&videoCategoryId=${categoryId}&key=${API_KEY}`
+        const Video_Url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=20&regionCode=IN&videoCategoryId=${categoryId}&key=${API_KEY}`
         await fetch(Video_Url).then(response => response.json()).then(data => setApidata(data.items)).catch((error) => console.log(error)) 
     }
 

@@ -15,6 +15,7 @@ import simon from "../../assets/simon.png";
 import tom from "../../assets/tom.png";
 import megan from "../../assets/megan.png";
 import cameron from "../../assets/cameron.png";
+import { Link } from "react-router-dom";
 
 
 export const Sidebar = ({sidebar, category, setCategory}) => {
@@ -52,9 +53,9 @@ export const Sidebar = ({sidebar, category, setCategory}) => {
         </div>
         <div className="subscribed-list">
             <h3>Subscribed</h3>
-            <div className="side-link">
+            <Link to={'/channel/channel'} className="side-link">
                 <img src={jack} alt="" /><p>Jack</p>
-            </div>
+            </Link>
             <div className="side-link">
                 <img src={simon} alt="" /><p>MrBeast</p>
             </div>

@@ -1,0 +1,71 @@
+.channel-banner img{
+    cursor:default;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.channel-details{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.channel-details .channel-profile img{
+    cursor: default;
+    border-radius: 50%;
+}
+.channel-details h1{
+    letter-spacing: 3px;
+    margin: 5px 0;
+}
+
+.channel-details p{
+    margin: 5px 0;
+}
+.channel-details p:nth-child(3){
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.channel-details a{
+    margin: 5px 0;
+    color: blue;
+}
+
+.channel-details .channel-join{
+    width: 50%;
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-around
+}
+.channel-details .channel-join button{
+    width: 100%;
+    margin: 0 10px;
+    padding: 15px;
+    border: 1px solid #999;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+}
+.channel-details .channel-join button:hover{
+    background-color: #e0dcdc;
+}
+
+.channel-nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.channel-nav h3{
+   cursor: pointer; 
+    color: #555;
+}
+
+.channel-nav h3.active{
+    color: #555;
+    border-bottom: 3px solid black;
+}

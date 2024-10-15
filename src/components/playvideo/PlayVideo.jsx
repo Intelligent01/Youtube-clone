@@ -84,7 +84,7 @@ export const PlayVideo = () => {
             <div className="play-video-info">
                 <p>{apidata ? value_converter(apidata.statistics?.viewCount) : "Loading views..."} Views &bull; 2 days ago</p>
                 <div>
-                    <span><img src={like} alt="" />{apidata?.statistics?.likeCount || 0}</span>
+                    <span><img src={like} alt="" />{value_converter(apidata?.statistics?.likeCount) || 0}</span>
                     <span><img src={dislike} alt="" /></span>
                     <span><img src={share} alt="" />share</span>
                     <span><img src={save} alt="" />save</span>
